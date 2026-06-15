@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #000000;
+    --font-color: white;
+    --secondery-color: #727171;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif;
+    color: var(--font-color);
+    font-weight: lighter;
+}
+
+nav{
+    width: clamp(350px, 100%, 600px);
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    display: none;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+nav a{
+    padding: 10px 20px;
+    text-align: center;
+    color: var(--font-color);
+    text-decoration: none;
+
+}
+
+nav a.active{
+    background-color: var(--font-color);
+    color: var(--primary-color);
+}
+
+
+/* large screen navbar start here */
+.navbar{
+    width: 100px;
+    height: 300vh;
+    background-color: rgb(53, 52, 52);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.3);
+}
+
+.navbar a{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--font-color);
+
+}
+
+.navbar a.first-black{
+    background-color: var(--primary-color);
+}
+
+.navbar a.first-black:hover{
+    background-color: white;
+    color: black;
+    transition: 0.4s ease;
+}
+
+.navbar a:hover{
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    transition: 0.4s ease;
+}
+/* large screen navbar end here */
+
+.container{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:  var(--primary-color);
+    margin-left: 100px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: var(--font-color);
+}
+
+header p{
+    padding-bottom: 20px;
+    color: var(--font-color);
+}
+
+
+header img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    object-fit: cover;
+    border-style: none;
+}
+
+main{
+    width: clamp(200px, 100%, 990px);
+    height: auto;
+    /* background-color: lightcoral; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+/* section one start */
+.introduction{
+    /* width: 100%; */
+    height: auto;
+    /* background-color: aqua; */
+    color: var(--font-color);
+    padding-top: 20px;
+}
+
+hr{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: clamp(100px, 20%, 300px);
+}
+
+.introduction p{
+    font-size: 15.5px;
+    line-height: 22px;
+    color: var(--secondery-color);
+}
+/* section one end */
+
+/* section two start */
+.skill{
+    width: 100%;
+    height: auto;
+    /* background-color: orange; */
+    color: var(--font-color);
+}
+
+.skill h1{
+    height: 50px;
+    margin: 30px 0px;
+}
+
+.skill span{
+    letter-spacing: 4px;
+    color: var(--secondery-color);
+}
+
+.percentage{
+    width: 100%;
+    height: 30px;
+    margin: 20px 0px;
+    background-color: var(--font-color);
+}
+
+.percentage .one{
+    width: 95%;
+    height: 30px;
+    background-color: var(--secondery-color);
+}
+
+.percentage .two{
+    width: 80%;
+    height: 30px;
+    background-color: var(--secondery-color);
+}
+
+.percentage .three{
+    width: 65%;
+    height: 30px;
+    background-color: var(--secondery-color);
+}
+
+.skill-box{
+    margin-top: 20px;
+    /* width: 100%; */
+    background-color:aqua;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skill-box div{
+    width: 100%;
+    /* height: 100px; */
+    background-color: var(--font-color);
+    color: var(--primary-color);
+    text-align: center;
+}
+.skill-box div h1{
+    color: var(--primary-color);
+}
+
+.skill-box div p{
+    font-size: 17px;
+    /* color: var(--secondery-color); */
+}
+
+.resume-btn{
+    width: 200px;
+    /* height: 200px; */
+    padding: 20px 0px;
+}
+
+.resume-btn Button{
+    padding: clamp(10px, 2%, 20px) clamp(20px, 5%, 40px);
+    border: none;
+}
+
+.resume-btn Button:hover{
+    cursor: pointer;
+    background-color: lightgray;
+}    
+/* section two end */
+
+/* section three start */
+.price-cards{
+    width: 100%;
+    height: auto;
+}
+
+.price-cards h1{
+    width: 100%;
+    height: 80px;
+    padding: 20px 0px;
+    color: var(--font-color);
+}
+
+.Mycards{
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card{
+    width: 100%;
+    height: auto;
+    gap: 25px;
+    background-color: var(--font-color);
+    color: var(--primary-color);
+    text-align: center;
+    /* padding: 20px 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0.7;
+}
+
+.card:hover{
+    opacity: 1;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
+}
+.card span{
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+    padding: 0px 0px 15px 0px;
+
+}
+
+.card div h1{
+    width:  100%;
+    /* height: 100px; */
+    padding-top: 35px;
+    color: var(--font-color);
+    background-color: var(--secondery-color) ;
+}
+
+.card span h2{
+    color: var(--primary-color);
+}
+
+.card div button{
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.card div button:hover{
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+}
+/* section three end */
+
+/* section four start */
+.sect-four{
+    width: 100%;
+    /* height: 200px; */
+    padding: 20px 0px;
+    /* background-color: lightseagreen; */
+    font-size: 14px;
+    color: var(--font-color);
+}
+
+.sect-four h1{
+    padding: 20px 0px;
+}
+
+.reputation-card{
+    width: clamp(300px, 100%,400px);
+    /* height: 100px; */
+    /* background-color: yellow; */
+    display: flex;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+.reputation-card img{
+    width: 80px;
+    height: 80px;
+    border-radius: 180px;
+}
+
+.reputation-heading{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: blue; */
+    
+}
+
+.reputation-one-text{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: green; */
+}
+/* section four end */
+
+/* section five start */
+.sect-five{
+    width: 100%;
+    height: auto;
+    /* background-color: orange; */
+    color: var(--font-color);
+    padding: 20px 0px;
+}
+
+.sect-gallery{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 15px;
+}
+
+.img-gallery{
+    width: 100%;
+    /* height: 300px; */
+    /* background-color: aqua; */
+}
+
+.img-gallery img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    padding: 5px 0px;
+}
+/* section five end */
+
+/* section six start */
+.section-six{
+    width: 100%;
+    /* background-color: lightsalmon; */
+}
+
+.six-detail{
+    padding: 0px 0px 20px 0px;
+}
+
+.six-detail h2{
+    font-size: 16px;
+    line-height: 30px;
+
+}
+.section-six form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section-six form p{
+    font-size: 13px;
+}
+
+.section-six input{
+    padding: 15px;
+}
+
+.section-six button{
+    width: 150px;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+}
+.section-six button:hover{
+    cursor: pointer;
+    background-color: lightgray;
+}
+/* section six end */
+
+/* section seven start */
+footer{
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    color: var(--font-color);
+}
+
+footer .icon{
+    width: 100%;
+    height: 150px;
+    /* background-color: lightgray; */
+    display: flex;
+    align-items: end;
+    padding-bottom: 10px;
+}
+
+.icon span i:hover{
+    opacity: 0.5;
+}
+
+footer a{
+    font-size: 14px;
+    color: var(--font-color);
+}
+/* section seven end */
+@media screen and (max-width: 601px) {
+    nav{
+        display: flex;
+    }
+
+    nav a{
+        width: 100%;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .container{
+        margin-left: 0;
+    }
+
+    .skill-box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Mycards{
+        flex-wrap:wrap;
+    }
+}
